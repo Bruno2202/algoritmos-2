@@ -1,4 +1,4 @@
-# [Algoritmos 2]
+# [Algoritmos 2](https://github.com/Bruno2202/algoritmos-2)
 
 Esse é um resumo da matéria de Algoritmos 2 do professor Begosso. Os ensinamentos passados giram em torno de funções em C++, ou seja, o intuito é aplicá-los em c++
 
