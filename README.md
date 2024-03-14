@@ -1,6 +1,6 @@
 # [Algoritmos 2](https://github.com/Bruno2202/algoritmos-2)
 
-Esse é um resumo da matéria de Algoritmos 2 do professor Begosso. Os ensinamentos passados giram em torno de funções em C++, ou seja, o intuito é aplicá-los em c++
+Esse é um resumo da matéria de Algoritmos 2 do professor Begosso. Os ensinamentos passados giram em torno de funções em C++, ou seja, o intuito é aplicá-los em funções escritas em C++
 
 ## Funções
 
@@ -27,7 +27,7 @@ Funções podem ter um retorno ou não. Caso não haja retorno, será uma funç�
     }
 ```
 
-No exemplo acima, a função "dobro" retornará um valor inteiro, no caso, é o dobro de 'c', que é passado por meio do parâmetro para a função.
+No exemplo acima, a função "dobro" retornará um valor inteiro, no caso, é o dobro de 'c', que é passado por meio de parâmetro para a função.
 
 ### Recursividade
 
@@ -35,16 +35,16 @@ Uma função pode ser "recursiva", ou seja, ela chama a si mesma dentro de seu e
 
 Um exemplo de função recursiva é fórmula de *Fibonacci*:
 
-*fib(n) = fib(n-1) + fib(n-2)*
+__*fib(n) = fib(n-1) + fib(n-2)*___
 
 O conceito da fórmula de *Fibonacci* é que "Cada número é a soma dos seus dois antecessores":
 
-https://s3.static.brasilescola.uol.com.br/be/2023/12/padroes-numericos-da-sequencia-de-fibonacci.jpg
+![image](https://github.com/Bruno2202/algoritmos-2/assets/61920647/390938e1-9a54-4981-9c7c-5e138b23c074)
 
 A fórmula de *Fibonacci* aplicada em C++ utiliza uma função recursiva para a sua execução:
 
 ```cpp
-    // Função do tipo "long" para suportar númerps inteiros muito grandes
+    // Função do tipo "long" para suportar números inteiros muito grandes
     long fibonacci( long n ) {
     if ( n == 0 || n == 1 )
         return n;
@@ -93,15 +93,15 @@ Ao utilizarmos ponteiros como parâmetros, podemos alterar variáveis de fora da
     }
 ```
 
-No exemplo acima, declaramos dua variáveis, 'w' e "w2". Passamos por meio de parâmetro as duas variáveis. A função recebeu o valor de 'w' (10) e recebeu o __endereço de memória__ de "w2", por conta que o segundo parâmetro foi idicado que seria recebido o endereço da variável que seria passada (w2) e não o seu valor em si.
+No exemplo acima, declaramos dua variáveis, 'w' e "w2". Passamos por meio de parâmetro as duas variáveis. A função recebeu o valor de 'w' (10) e recebeu o __endereço de memória__ de "w2", por conta que o segundo parâmetro foi idicado que seria recebido o endereço da variável que seria passada *(void sqr (int x, int __&__result)* e não o seu valor em si.
 
-Foi feito a múltiplicação do número recebido por parâmetro (5) por ele mesmo (5), ou seja: 5 x 5 = 10. O valor da multplicação foi pasado para "result", o qual é a referência do endereço de memória de "w2". Logo, o valor de "w2" passou a ser 10.
+Foi feito a multiplicação do número recebido por parâmetro (5) por ele mesmo (5), ou seja: 5 x 5 = 10. O valor da multiplicação foi passado para "result", o qual é a referência do endereço de memória de "w2". Logo, o valor de "w2" passou a ser 10.
 
 ## Arrays como ponteiros
 
-Um array não é nada mais nada mesno que um ponteiro. Ou seja, quando criamos um array, estamos criando um ponteiro. O valor do ponteiro  igual ao endereço de memória do primeiro elemento do array (meuArray[0]).
+Um array é nada mais nada menos que um ponteiro. Ou seja, quando criamos um array, estamos criando um ponteiro. O valor do ponteiro é igual ao endereço de memória do primeiro elemento do array (meuArray[0]).
 
-Ou seja: vet E &vet[0] são a __mesma coisa__.
+Ou seja: __*vet*__ E __*&vet[0]*__ são a __mesma coisa__.
 
 ### Função strcmp()
 
